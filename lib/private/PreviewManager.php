@@ -281,6 +281,7 @@ class PreviewManager implements IPreview {
 	 *  - OC\Preview\BMP
 	 *  - OC\Preview\HEIC
 	 *  - OC\Preview\XBitmap
+	 *  - OC\Preview\Webp
 	 *  - OC\Preview\MarkDown
 	 *  - OC\Preview\MP3
 	 *  - OC\Preview\TXT
@@ -314,6 +315,7 @@ class PreviewManager implements IPreview {
 			Preview\BMP::class,
 			Preview\HEIC::class,
 			Preview\XBitmap::class
+			Preview\Webp::class
 		];
 
 		$this->defaultProviders = $this->config->getSystemValue('enabledPreviewProviders', array_merge([
@@ -359,6 +361,7 @@ class PreviewManager implements IPreview {
 		$this->registerCoreProvider(Preview\GIF::class, '/image\/gif/');
 		$this->registerCoreProvider(Preview\BMP::class, '/image\/bmp/');
 		$this->registerCoreProvider(Preview\XBitmap::class, '/image\/x-xbitmap/');
+		$this->registerCoreProvider(Preview\Webp::class, '/image\/webp/');
 		$this->registerCoreProvider(Preview\MP3::class, '/audio\/mpeg/');
 
 		// SVG, Office and Bitmap require imagick

@@ -994,6 +994,7 @@ $CONFIG = array(
  *  - OC\Preview\PNG
  *  - OC\Preview\TXT
  *  - OC\Preview\XBitmap
+ *  - OC\Preview\Webp
  */
 'enabledPreviewProviders' => array(
 	'OC\Preview\PNG',
@@ -1004,7 +1005,8 @@ $CONFIG = array(
 	'OC\Preview\XBitmap',
 	'OC\Preview\MP3',
 	'OC\Preview\TXT',
-	'OC\Preview\MarkDown'
+	'OC\Preview\MarkDown',
+	'OC\Preview\Webp',
 ),
 
 /**
